@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ToSic.Module.PageTemplates.Manager
 {
-    public class PageTemplatesManager : MigratableModuleBase, IInstallable, IPortable, ISearchable
+    public class PageTemplatesManager : MigratableModuleBase, IInstallable, IPortable/*, ISearchable*/
     {
         public PageTemplatesManager()
         {   }
@@ -34,10 +34,10 @@ namespace ToSic.Module.PageTemplates.Manager
             
         }
 
-        public Task<List<SearchContent>> GetSearchContentsAsync(PageModule pageModule, DateTime lastIndexedOn)
-        {
-           var searchContentList = new List<SearchContent>();
-           return Task.FromResult(searchContentList);
-        }
+        //public Task<List<SearchContent>> GetSearchContentsAsync(PageModule pageModule, DateTime lastIndexedOn)
+        //{
+        //   var searchContentList = new List<SearchContent>();
+        //   return Task.FromResult(searchContentList);
+        //}
     }
 }
